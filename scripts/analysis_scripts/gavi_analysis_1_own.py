@@ -281,7 +281,7 @@ def main():
 
     # Axes and grid
     ax.set_xlabel("Year")
-    ax.set_ylabel(r"HPV first-dose coverage (\%)")
+    ax.set_ylabel(r"HPV first-dose coverage (%)")
 
     ax.set_xlim(2015, 2024)
     ax.set_xticks(list(range(2015, 2025, 1)))
