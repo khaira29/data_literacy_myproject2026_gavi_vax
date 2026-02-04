@@ -1,0 +1,26 @@
+Formula: vax_fd_cov ~ time * C(gavi_trajectory, Treatment(reference="Never Gavi (always)"))
+Reference group: Never Gavi (always)
+Converged: True
+
+                                                    Mixed Linear Model Regression Results
+==============================================================================================================================================
+Model:                                          MixedLM                             Dependent Variable:                             vax_fd_cov
+No. Observations:                               1017                                Method:                                         ML        
+No. Groups:                                     106                                 Scale:                                          486.2743  
+Min. group size:                                1                                   Log-Likelihood:                                 -4722.1231
+Max. group size:                                10                                  Converged:                                      Yes       
+Mean group size:                                9.6                                                                                           
+----------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                  Coef.  Std.Err.   z    P>|z|  [0.025  0.975]
+----------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                                         32.636    4.931  6.619 0.000  22.972  42.301
+C(gavi_trajectory, Treatment(reference="Never Gavi (always)"))[T.Classic Gavi (always)]          -36.456    6.648 -5.484 0.000 -49.485 -23.427
+C(gavi_trajectory, Treatment(reference="Never Gavi (always)"))[T.Classic → MIC (graduated)]      -21.554    8.646 -2.493 0.013 -38.500  -4.608
+C(gavi_trajectory, Treatment(reference="Never Gavi (always)"))[T.Never → MIC (MICs entry)]       -23.783    7.764 -3.063 0.002 -39.001  -8.566
+time                                                                                               1.033    0.467  2.214 0.027   0.118   1.948
+time:C(gavi_trajectory, Treatment(reference="Never Gavi (always)"))[T.Classic Gavi (always)]       4.617    0.611  7.561 0.000   3.421   5.814
+time:C(gavi_trajectory, Treatment(reference="Never Gavi (always)"))[T.Classic → MIC (graduated)]   3.300    0.793  4.164 0.000   1.747   4.854
+time:C(gavi_trajectory, Treatment(reference="Never Gavi (always)"))[T.Never → MIC (MICs entry)]    3.528    0.706  4.996 0.000   2.144   4.911
+Group Var                                                                                        587.296    4.234                             
+==============================================================================================================================================
+

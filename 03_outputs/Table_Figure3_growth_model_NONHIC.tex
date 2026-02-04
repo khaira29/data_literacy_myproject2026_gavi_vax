@@ -1,0 +1,18 @@
+\begin{table}
+\caption{Growth model estimates of HPV first-dose coverage by Gavi status (non-HIC countries)}
+\label{tab:gavi_growth_model}
+\begin{tabular}{lrrrr}
+\toprule
+term & estimate & std_error & z & p_value \\
+\midrule
+Intercept & 32.640000 & 4.930000 & 6.620000 & <0.001 \\
+C(gavi_trajectory, Treatment(reference="Never Gavi (always)"))[T.Classic Gavi (always)] & -36.460000 & 6.650000 & -5.480000 & <0.001 \\
+C(gavi_trajectory, Treatment(reference="Never Gavi (always)"))[T.Classic → MIC (graduated)] & -21.550000 & 8.650000 & -2.490000 & 0.013 \\
+C(gavi_trajectory, Treatment(reference="Never Gavi (always)"))[T.Never → MIC (MICs entry)] & -23.780000 & 7.760000 & -3.060000 & 0.002 \\
+time & 1.030000 & 0.470000 & 2.210000 & 0.027 \\
+time:C(gavi_trajectory, Treatment(reference="Never Gavi (always)"))[T.Classic Gavi (always)] & 4.620000 & 0.610000 & 7.560000 & <0.001 \\
+time:C(gavi_trajectory, Treatment(reference="Never Gavi (always)"))[T.Classic → MIC (graduated)] & 3.300000 & 0.790000 & 4.160000 & <0.001 \\
+time:C(gavi_trajectory, Treatment(reference="Never Gavi (always)"))[T.Never → MIC (MICs entry)] & 3.530000 & 0.710000 & 5.000000 & <0.001 \\
+\bottomrule
+\end{tabular}
+\end{table}
